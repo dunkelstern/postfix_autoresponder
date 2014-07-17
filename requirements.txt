@@ -1,0 +1,5 @@
+# for parsing config files
+ConfigParser
+
+# we need "opts" but the current setup script is broken so we use my clone
+git+https://github.com/dunkelstern/opts.git
