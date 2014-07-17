@@ -23,12 +23,12 @@ Default config:
     executable=/usr/bin/sendmail 
     arguments=-i -f %(sender)s %(recipient)s
 
-spool/directory -> the directory to store the autoresponders to  
-spool/uid -> uid of your mail user  
-spool/gif -> gid of your mail user  
+* spool/directory -> the directory to store the autoresponders to
+* spool/uid -> uid of your mail user
+* spool/gif -> gid of your mail user
 
-sendmail/executable -> full path to your sendmail executable  
-sendmail/arguments -> arguments to give sendmail, `%(sender)s` expands to sender's e-mail `%(recipient)s` expands to recipient e-mail address.
+* sendmail/executable -> full path to your sendmail executable
+* sendmail/arguments -> arguments to give sendmail, `%(sender)s` expands to sender's e-mail `%(recipient)s` expands to recipient e-mail address.
 
 The spool/directory has to be writable by the mailserver group, everyone that should be able to set autoresponders has to be in that group (or root has to do it).
 
